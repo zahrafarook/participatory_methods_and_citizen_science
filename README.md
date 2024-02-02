@@ -1,1 +1,3 @@
-# participatory_methods_and_citizen_science
+# participatory methods and citizen science
+
+research on the citizen science CNC data.
