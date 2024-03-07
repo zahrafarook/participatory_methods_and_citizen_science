@@ -14,7 +14,9 @@ The main hypothesis behind the temporal evolution of the collective total number
 
 2. In order to be able to detect those universal patterns from year to year, we are fitting the data points into a smooth curve of the distributions (e.g.
 the Gamma, Gumbel, Normal distributions). The idea behind fitting hence is that it is possible to compare two smooth curves between each other, rather than to compare the points (observations which may contain noise as well).
-
-Each of these distributions will have goodness of fit (defined by specific parameters like squared error, see notebook I shared with you on fitting).
+Each of these distributions will have goodness of fit, defined by specific parameters like squared error, see notebook I shared with you on fitting.
+Parameters of goodness of fitting are: 
+- Mean Squared Error (MSE): Lower values of MSE indicate better fit. However, the absolute value of MSE depends on the scale of the data, so it's not directly comparable across different datasets.
+- R-squared (Coefficient of Determination): R-squared ranges from 0 to 1. Higher values closer to 1 indicate a better fit, implying that a larger proportion of the variance in the dependent variable is explained by the independent variables.
 
 3. Since we clearly see the skewed distribution of the number of observations in time, most probably we dealt with the so-called  extreme-value statistics, which are two-parametric distributions (parameter of left slope is alpha, parameter of right slope is betta), described by parameters here https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.gumbel_r.html 
